@@ -5,11 +5,23 @@ import Row from "react-bootstrap/esm/Row";
 const ProductGallery = (props) => {
   return (
     <Row className="py-5">
-      <Col md={6}>
-        <h1>{props.entityLabel}</h1>
+      <Col md={5}>
+        <h1>{props?.title}</h1>
       </Col>
-      <Col md={6}>
-        <Image src={props.img} alt={props.alt} className="img-fluid" />
+      <Col md={5}>
+        {props?.media?.map((item) => (
+          <Image
+            fluid
+            src={
+              item?.entity?.fieldProdDetailsBcolorImage?.entity?.fieldMediaImage
+                ?.url
+            }
+            alt={
+              item?.entity?.fieldProdDetailsBcolorImage?.entity?.fieldMediaImage
+                ?.alt
+            }
+          />
+        ))}
       </Col>
     </Row>
   );

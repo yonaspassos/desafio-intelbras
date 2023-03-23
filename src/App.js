@@ -1,18 +1,14 @@
-import Header from "./Components/Header";
 import "./App.css";
-import Content from "./Containers/Content";
-import ProductDisclamer from "./Components/ProductDisclamer";
-import SuporteBar from "./Components/SuporteBar";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import ProductPage from "./Pages/ProductPage";
 
 function App() {
   return (
     <div className="App">
-      <div className="container ">
-        <Header />
-        <Content />
-        <ProductDisclamer />
-      </div>
-      <SuporteBar />
+      <Header />
+      <ProductPage />
+      <Footer />
     </div>
   );
 }
