@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap";
 import Col from "react-bootstrap/esm/Col";
 import * as S from "./styles";
 
-const TwoCollumnProduct = (props) => {
+const MiniBanner = (props) => {
   return (
     <S.Row className="py-4" position={props.direction.toLowerCase()}>
       <Col md={6}>
@@ -17,4 +17,4 @@ const TwoCollumnProduct = (props) => {
   );
 };
 
-export default TwoCollumnProduct;
+export default MiniBanner;

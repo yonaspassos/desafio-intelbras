@@ -19,7 +19,10 @@ const ProductPage = () => {
     <>
       <Container>
         <ProductGallery
-          title={product?.entityLabel}
+          title={product?.title}
+          subtitle={product?.fieldProductSubtitle}
+          description={product?.fieldProductSummary?.value}
+          cover={product?.fieldProdDetailsBcolorCover}
           media={product?.fieldProductDetailsByColor}
         />
         <Content banners={product?.fieldProductDescription} />

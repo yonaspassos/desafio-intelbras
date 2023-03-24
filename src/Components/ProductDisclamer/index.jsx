@@ -11,8 +11,8 @@ const ProductDisclamer = (props) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <Container>
-      <Row className="justify-content-sm-center" fluid>
+    <Container fluid>
+      <Row className="justify-content-sm-center">
         <Col xs lg="1">
           <img src={Icon} alt="Icone" />
         </Col>

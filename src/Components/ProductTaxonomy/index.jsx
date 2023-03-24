@@ -8,8 +8,8 @@ const ProductTaxonomy = (props) => {
       <S.Breadcrumb>
         <Breadcrumb.Item>Home</Breadcrumb.Item>
         <Breadcrumb.Item>Produtos</Breadcrumb.Item>
-        {props?.taxonomies?.map((item) => (
-          <Breadcrumb.Item href={item?.entity?.entityUrl?.path}>
+        {props?.taxonomies?.map((item, index) => (
+          <Breadcrumb.Item key={index} href={item?.entity?.entityUrl?.path}>
             {item?.entity?.entityLabel}
           </Breadcrumb.Item>
         ))}
