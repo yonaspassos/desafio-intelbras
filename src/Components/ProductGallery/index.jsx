@@ -35,8 +35,9 @@ const ProductGallery = (props) => {
                 product?.fieldProdDetailsBcolorCover?.entity?.fieldMediaImage
                   ?.alt
               }
+              onClick={() => setOpen(true)}
             />
-            <S.Icon src={IconGallery} onClick={() => setOpen(true)} />
+            <S.Icon src={IconGallery} />
             <Carousel
               media={product?.fieldProdDetailsBcolGallery}
               open={open}
