@@ -1,7 +1,6 @@
 import React from "react";
-import { Image } from "react-bootstrap";
-import ImageHeader from "../../assets/images/header.png";
+import * as S from "./styles";
 
-const Header = () => <Image src={ImageHeader} fluid />;
+const Header = () => <S.Header fluid />;
 
 export default Header;

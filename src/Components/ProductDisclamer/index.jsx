@@ -12,17 +12,17 @@ const ProductDisclamer = (props) => {
 
   return (
     <Container fluid>
-      <Row className="justify-content-sm-center">
-        <Col xs lg="1">
+      <Row className="justify-content-center">
+        <Col xs="2" lg="1">
           <img src={Icon} alt="Icone" />
         </Col>
-        <Col md="3">
+        <Col xs="6" lg="5">
           <p>
             Este produto deve ser configurado por um{" "}
             <strong>técnico qualificado</strong>.
           </p>
         </Col>
-        <Col xs="auto" lg="2">
+        <Col xs="auto" lg="auto">
           <S.Button
             href="#"
             variant="link"

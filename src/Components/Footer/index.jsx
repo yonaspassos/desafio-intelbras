@@ -1,7 +1,6 @@
 import React from "react";
-import { Image } from "react-bootstrap";
-import ImageFooter from "../../assets/images/Footer.png";
+import * as S from "./styles";
 
-const Footer = () => <Image src={ImageFooter} fluid />;
+const Footer = () => <S.Footer fluid />;
 
 export default Footer;

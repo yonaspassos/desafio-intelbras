@@ -7,6 +7,7 @@ import ProductTaxonomy from "../../Components/ProductTaxonomy";
 import SuporteBar from "../../Components/SuporteBar";
 import Content from "../../Containers/Content";
 import { PRODUCTQUERY } from "../../queries";
+import * as S from "./styles";
 
 const ProductPage = () => {
   const { data } = useQuery(PRODUCTQUERY);
@@ -17,18 +18,17 @@ const ProductPage = () => {
 
   return (
     <>
-      <Container>
+      <S.Container>
         <ProductGallery
           title={product?.title}
           subtitle={product?.fieldProductSubtitle}
           description={product?.fieldProductSummary?.value}
-          cover={product?.fieldProdDetailsBcolorCover}
           media={product?.fieldProductDetailsByColor}
         />
         <Content banners={product?.fieldProductDescription} />
         <hr className="my-5" />
         <ProductDisclamer />
-      </Container>
+      </S.Container>
       <SuporteBar />
       <Container>
         <ProductTaxonomy taxonomies={product?.fieldProductTaxonomy} />
